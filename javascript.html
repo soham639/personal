@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en"><CENTER>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPEC VIT PUNE...</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main{
+            background-image: url(EPEC.png);
+            background-repeat:no-repeat;
+            background-size: 100vw 110vh;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.7);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        header .logo {
+            font-size: 2em;
+            font-weight: bold;
+            color: #570e4e;
+            text-shadow: 0px 2px 5px #000;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1em;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #041459;
+            transform: scale(1.1);
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            color: #ffeb3b;
+            text-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin: 20px 0;
+            color: #fff;
+        }
+
+        .btn {
+            background: #4c0f53;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background: #ffeb3b;
+            color: #000;
+            transform: translateY(-5px);
+        }
+
+        .section {
+            padding: 50px;
+            background: rgba(44, 65, 142, 0.6);
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #480646;
+            text-shadow: 0px 2px 5px #000;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .video-container video {
+            width: 90%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        footer {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            color: #fff;
+            font-size: 1em;
+        }
+
+        footer a {
+            color: #610c28;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+    
+        const password = "EPEC2024-25"; 
+        const userPassword = prompt("Please enter the password to access this site:");
+
+        if (userPassword !== password) {
+            alert("Incorrect password. You will be redirected.");
+            window.location.href = "https://www.google.com"; // Redirect to another site if password is wrong
+        }
+    </script>
+    <!-- Header Section -->
+     <div class="main">
+    <header>
+        <div class="logo">EPEC<span>VIT PUNE</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div>
+            <h1>Welcome to EPEC</h1>
+            <p>Your Destination for Unforgettable Events</p>
+            <a href="#about" class="btn">Explore More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>EPEC is a student-driven club that transforms ordinary moments into extraordinary memories. Join us for cultural fests, tech expos, and fun-filled competitions!</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <h2>Our Events</h2>
+        <div class="gallery">
+            <img src="C:\Users\soham\Downloads\VISHWAKARANDAK.jpg" alt="Event 1">
+            <img src="C:\Users\soham\Downloads\MELAGNE.jpg" alt="Event 2">
+            <img src="C:\Users\soham\Downloads\VISHWOSTAV.png"alt="Event 3">
+            <img src="C:\Users\soham\Downloads\VISHWATECH.png" alt="Event 4">
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="section">
+        <h2>Watch Our Journey</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="C:\Users\soham\Downloads\Untitled video - Made with Clipchamp.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:epec@college.edu">epec@college.edu</a></p>
+        <p>Phone: +123 456 7890</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 EPEC. All Rights Reserved. | Designed with <span style="color: #3c0447;">❤</span> by the EPEC Team</p>
+    </footer></div>
+</body></CENTER>
+</html>
